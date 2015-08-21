@@ -369,7 +369,7 @@ namespace Orasi.Selenium.Core.PageClass
         /// </summary>
         /// <param name="element">Element for which to get the locator info</param>
         /// <returns>string By type and locator string</returns>
-        public string getElementLocatorInfo(IWebElement element)
+        public string getElementLocatorInfo(Tuple<locatorType, string> element)
         {
             return element.Item1.ToString() + " = " + element.Item2;
         }

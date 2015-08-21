@@ -11,7 +11,7 @@ namespace Orasi.Api.Apps.Predic8.Services.ArticleService
     public class Operation_Get : Service_ArticleService
     {
         //SOAP Request XML warehouse location
-        private string requestPath = @"C:\Users\temp\Documents\Visual Studio 2013\Projects\Selenium_CSharp\mySelenium\Orasi.Api.Apps.Predic8.Services.ArticleService.Operations.RequestXmlWarehouse\Get.xml";
+        private string requestPath = @"C:\Users\temp\Documents\Visual Studio 2013\Projects\Selenium_CS\Selenium_CS\Orasi\API\Apps\Predic8\Services\ArticleService\Operations\RequestXmlWarehouse\Get.xml";
 
         //Commonly used request xpaths
         private string rqArticleIdXpath = "/*[local-name(.)='Envelope'][1]/*[local-name(.)='Body'][1]/*[local-name(.)='get'][1]/*[local-name(.)='id'][1]";

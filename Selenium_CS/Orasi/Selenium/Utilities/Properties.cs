@@ -14,7 +14,7 @@ namespace Orasi.Utilities
         //Define a dictionary to hold all property files
         private Dictionary<string, string> list;
         //Property file location
-        private string filename = @"C:\Users\temp\Documents\Visual Studio 2013\Projects\Selenium_CSharp\mySelenium\Orasi.Utilities\Credentials_URL.properties";
+        private string filename = @"C:\Users\temp\Documents\Visual Studio 2013\Projects\Selenium_CS\Selenium_CS\Orasi\Selenium\Utilities\Credentials_URL.properties";
 
         /// <summary>
         ///     Constructor that loads a predefined properties file

@@ -13,7 +13,7 @@ namespace Orasi.Api.Apps.Predic8.Services.ArticleService
     public class Operation_GetAll : Service_ArticleService
     {
         //SOAP Request XML warehouse location
-        private string requestPath = @"C:\Users\temp\Documents\Visual Studio 2013\Projects\Selenium_CSharp\mySelenium\Orasi.Api.Apps.Predic8.Services.ArticleService.Operations.RequestXmlWarehouse\GetAll.xml";
+        private string requestPath = @"C:\Users\temp\Documents\Visual Studio 2013\Projects\Selenium_CS\Selenium_CS\Orasi\API\Apps\Predic8\Services\ArticleService\Operations\RequestXmlWarehouse\GetAll.xml";
 
         //Commonly used request xpaths
 

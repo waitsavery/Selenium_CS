@@ -91,7 +91,7 @@ namespace Orasi.Selenium.Core.TestClass
                     //Test the chrome browser
                     case "chrome":
                         //driver = new ChromeDriver(@"C:\selenium-dotnet-2.43.1\drivers");
-                        driver = new ChromeDriver(@"C:\Users\temp\Documents\Visual Studio 2013\Projects\Selenium_CSharp\mySelenium\Drivers");
+                        driver = new ChromeDriver(@"C:\Users\temp\Documents\Visual Studio 2013\Projects\Selenium_CS\Selenium_CS\Orasi\Drivers");
                         break;
                     //Test the firefox browser
                     case "firefox":
@@ -216,7 +216,7 @@ namespace Orasi.Selenium.Core.TestClass
         {
         }
 
-        public Screenshot GetScreenshot()
+        public Screenshot GetScreenshots()
         {
             // Get the screenshot as base64. 
             Response screenshotResponse = this.Execute(DriverCommand.Screenshot, null);

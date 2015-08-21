@@ -25,23 +25,6 @@ namespace Orasi.Selenium.Apps.Bluesource.Pages
         //***************************
         //*** Login Page Elements ***
         //***************************
-        [FindsBy(How = How.Id, Using = "employee_username")]
-        private IWebElement txtUsername;
-
-        [FindsBy(How = How.Id, Using = "employee_password")]
-        private IWebElement txtPassword;
-
-        [FindsBy(How = How.Name, Using = "commit")]
-        private IWebElement btnLogin;
-
-        [FindsBy(How = How.XPath, Using = "//*[@id=\"all-content\"]/h1")]
-        private IWebElement eleHomePageAllContentHeader;
-
-        [FindsBy(How = How.XPath, Using = "/html/body/header/div/nav/ul/li[8]/a")]
-        private IWebElement lnkLogout;
-
-        [FindsBy(How = How.XPath, Using = "//*[@id=\"content\"]/h1")]
-        private IWebElement txtUsername;
 
         /// <summary>
         ///     Add all desired elements for this page into the element dictionary
