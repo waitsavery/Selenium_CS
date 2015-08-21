@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns="http://predic8.com/wsdl/material/ArticleService/1/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <ns:get>
+      <id>?</id>
+    </ns:get>
+  </soapenv:Body>
+</soapenv:Envelope>

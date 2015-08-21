@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{74E51593-1E2C-46B8-8EB7-F6B52B539DE6}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Selenium_CS</RootNamespace>
+    <AssemblyName>Selenium_CS</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Excel.4.5">
+      <HintPath>..\..\..\..\..\..\..\ExcelReader\output\net45\Excel.4.5.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\..\..\..\..\..\ExcelReader\output\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\NUnit 2.6.4\bin\addins\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Services3, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft WSE\v3.0\Microsoft.Web.Services3.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\NUnit 2.6.4\bin\addins\nunit.core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.core.interfaces">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\NUnit 2.6.4\bin\addins\nunit.core.interfaces.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.6.4.14350, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\NUnit 2.6.4\bin\addins\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Selenium.WebDriverBackedSelenium">
+      <HintPath>..\..\..\..\..\..\..\selenium-dotnet-2.43.1\net40\Selenium.WebDriverBackedSelenium.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.Selenium.Core">
+      <HintPath>..\..\..\..\..\..\..\selenium-dotnet-2.47.0\net40\ThoughtWorks.Selenium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\..\..\..\..\..\..\selenium-dotnet-2.43.1\net40\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\..\..\..\..\..\..\selenium-dotnet-2.43.1\net40\WebDriver.Support.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Orasi\API\Apps\Predic8\Services\ArticleService\Operations\Operation_Create.cs" />
+    <Compile Include="Orasi\API\Apps\Predic8\Services\ArticleService\Operations\Operation_Delete.cs" />
+    <Compile Include="Orasi\API\Apps\Predic8\Services\ArticleService\Operations\Operation_Get.cs" />
+    <Compile Include="Orasi\API\Apps\Predic8\Services\ArticleService\Operations\Operation_GetAll.cs" />
+    <Compile Include="Orasi\API\Apps\Predic8\Services\ArticleService\Serivce_ArticleService.cs" />
+    <Compile Include="Orasi\API\Apps\Predic8\Tests\Test_CRUD.cs" />
+    <Compile Include="Orasi\API\SoapServices.cs" />
+    <Compile Include="Orasi\Selenium\Apps\BlueSource\Pages\BasePageClass_BlueSource.cs" />
+    <Compile Include="Orasi\Selenium\Apps\BlueSource\Pages\Page_BlueSourceLogin.cs" />
+    <Compile Include="Orasi\Selenium\Apps\BlueSource\Tests\EntryPoint.cs" />
+    <Compile Include="Orasi\Selenium\Apps\BlueSource\Tests\Test_BlueSourceLogin.cs" />
+    <Compile Include="Orasi\Selenium\Apps\BlueSource\Tests\Test_BlueSourceLogout.cs" />
+    <Compile Include="Orasi\Selenium\Core\PageClass\BasePageClass.cs" />
+    <Compile Include="Orasi\Selenium\Core\PageClass\BasePageClassInterface.cs" />
+    <Compile Include="Orasi\Selenium\Core\PageClass\Element.cs" />
+    <Compile Include="Orasi\Selenium\Core\PageClass\ElementInterface.cs" />
+    <Compile Include="Orasi\Selenium\Core\PageClass\PageLoaded.cs" />
+    <Compile Include="Orasi\Selenium\Core\PageClass\RadioGroup.cs" />
+    <Compile Include="Orasi\Selenium\Core\PageClass\WebTable.cs" />
+    <Compile Include="Orasi\Selenium\Core\TestClass\BaseTestClass.cs" />
+    <Compile Include="Orasi\Selenium\Core\TestClass\BaseTestClassInterface.cs" />
+    <Compile Include="Orasi\Selenium\Core\TestClass\WebDriverSetup.cs" />
+    <Compile Include="Orasi\Selenium\Utilities\Base64.cs" />
+    <Compile Include="Orasi\Selenium\Utilities\Constants.cs" />
+    <Compile Include="Orasi\Selenium\Utilities\Properties.cs" />
+    <Compile Include="Orasi\Selenium\Utilities\Randomness.cs" />
+    <Compile Include="Orasi\Selenium\Utilities\RegEx.cs" />
+    <Compile Include="Orasi\Selenium\Utilities\Screenshots.cs" />
+    <Compile Include="Orasi\Selenium\Utilities\TestReporter.cs" />
+    <Compile Include="Orasi\Selenium\Utilities\XMLTools.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Orasi\Selenium\Utilities\Credentials_URL.properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Orasi\API\Apps\Predic8\Services\ArticleService\Operations\RequestXmlWarehouse\Create.xml" />
+    <Content Include="Orasi\API\Apps\Predic8\Services\ArticleService\Operations\RequestXmlWarehouse\Delete.xml" />
+    <Content Include="Orasi\API\Apps\Predic8\Services\ArticleService\Operations\RequestXmlWarehouse\Get.xml" />
+    <Content Include="Orasi\API\Apps\Predic8\Services\ArticleService\Operations\RequestXmlWarehouse\GetAll.xml" />
+    <Content Include="Orasi\Drivers\chromedriver.exe" />
+    <Content Include="Orasi\Drivers\IEDriverServer.exe" />
+    <Content Include="Orasi\page.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
